@@ -1,0 +1,8 @@
+{
+  "name": "repro-app",
+  "private": true,
+  "dependencies": {
+    "repro-narrow": "1.0.0",
+    "repro-wide": "1.0.0"
+  }
+}

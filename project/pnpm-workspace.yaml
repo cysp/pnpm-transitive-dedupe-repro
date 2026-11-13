@@ -1,0 +1,5 @@
+autoDedupe: true
+# The synthetic versions are published to the temporary registry during this run.
+minimumReleaseAge: 0
+storeDir: ./store
+cacheDir: ./cache

@@ -1,0 +1,7 @@
+{
+  "name": "repro-narrow",
+  "version": "1.0.0",
+  "dependencies": {
+    "repro-child": "~1.0.0"
+  }
+}

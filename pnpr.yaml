@@ -1,0 +1,9 @@
+registries:
+  local:
+    type: hosted
+    packages:
+      "**":
+        publish: $all
+defaultRegistry: local
+log:
+  level: error
