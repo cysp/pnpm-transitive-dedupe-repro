@@ -40,8 +40,7 @@ until grep -q 'pnpr listening' "$scratch/pnpr.log"; do
   sleep 0.1
 done
 
-cp -R "$root/fixtures" "$scratch/fixtures"
-for fixture in "$scratch"/fixtures/*/*; do
+for fixture in "$root"/fixtures/*/*; do
   (cd "$fixture" && "$pnpm" publish --no-git-checks --ignore-scripts --registry "$registry" >/dev/null)
 done
 cp -R "$root/project" "$scratch/project"

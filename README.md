@@ -23,7 +23,7 @@ To select binaries or another loopback port:
 PNPM_BIN=/path/to/pnpm PNPR_BIN=/path/to/pnpr PNPR_PORT=17677 ./repro.sh
 ```
 
-The script starts a temporary local pnpr registry, publishes the four fixture versions into it, and runs `pnpm install --lockfile-only` followed by `pnpm dedupe --check`. pnpr's resolver is disabled; pnpm resolves the dependencies locally. No upstream registry or credentials are used. `minimumReleaseAge: 0` admits the freshly seeded versions. The registry and temporary files are removed on exit.
+The script starts a temporary local pnpr registry, publishes the four fixture versions directly from their tracked directories, and runs `pnpm install --lockfile-only` followed by `pnpm dedupe --check`. pnpr's resolver is disabled; pnpm resolves the dependencies locally. No upstream registry or credentials are used. `minimumReleaseAge: 0` admits the freshly seeded versions. Fixture files stay in place; the registry and consumer project remain temporary and are cleaned up on exit.
 
 ## Result
 
